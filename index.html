@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5eee4">
+  <title>Oposiciones 🤎</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <span class="brand">Oposiciones<span>🤎</span></span>
+    <span class="subtitle">Mi camino hacia mi plaza</span>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <p class="eyebrow">MI PEQUEÑO RINCÓN DE ESTUDIO</p>
+      <h1>¡Hola, futura maestra! 🌷</h1>
+      <p>Cada día estás un poquito más cerca.</p>
+    </section>
+
+    <section class="progress-card">
+      <p>🌱 Mi progreso</p>
+      <h2 id="hours">0 horas</h2>
+      <p>Todo esfuerzo cuenta. ¡Sigue así!</p>
+    </section>
+
+    <section class="garden-card">
+      <div class="garden-icon">🏡🌷🌳🦋</div>
+      <h2>Mi jardín mágico</h2>
+      <p>Un jardín que florece con cada hora de estudio.</p>
+      <button onclick="showSection('garden')">Entrar en mi jardín</button>
+    </section>
+
+    <section class="menu">
+      <h2>Mi espacio de estudio</h2>
+      <div class="menu-grid">
+        <button onclick="showSection('temario')">📚<span>Temario</span></button>
+        <button onclick="showSection('documents')">📁<span>Documentos</span></button>
+        <button onclick="showSection('laws')">⚖️<span>Legislación</span></button>
+        <button onclick="showSection('tests')">✏️<span>Tests</span></button>
+        <button onclick="showSection('cases')">🧩<span>Supuestos</span></button>
+        <button onclick="showSection('progress')">📊<span>Progreso</span></button>
+      </div>
+    </section>
+
+    <section class="study-card">
+      <h2>⏰ Registrar estudio</h2>
+      <p>¿Cuánto has estudiado hoy?</p>
+      <button onclick="addStudy(30)">+30 minutos</button>
+      <button onclick="addStudy(60)">+1 hora</button>
+      <button onclick="addStudy(120)">+2 horas</button>
+    </section>
+
+    <section id="extra" class="extra">
+      <h2>Bienvenida a tu academia 🤎</h2>
+      <p>Selecciona un apartado para comenzar.</p>
+      <button onclick="showSection('home')">Volver al inicio</button>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <button onclick="showSection('home')">🏡<span>Inicio</span></button>
+    <button onclick="showSection('temario')">📚<span>Temario</span></button>
+    <button onclick="showSection('garden')">🌷<span>Jardín</span></button>
+    <button onclick="showSection('progress')">📊<span>Progreso</span></button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

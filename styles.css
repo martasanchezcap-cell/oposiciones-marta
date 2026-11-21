@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 90px;
+  background: #f8f3eb;
+  color: #57483d;
+  font-family: Georgia, serif;
+}
+
+.topbar {
+  padding: 22px 20px;
+  background: #eee3d5;
+}
+
+.brand {
+  display: block;
+  font-size: 27px;
+  font-weight: bold;
+  color: #765846;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #907967;
+}
+
+main {
+  max-width: 650px;
+  margin: auto;
+  padding: 18px;
+}
+
+.welcome {
+  padding: 25px 5px;
+}
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #a88970;
+}
+
+h1 {
+  font-size: 29px;
+  color: #70523e;
+}
+
+h2 {
+  color: #70523e;
+}
+
+.progress-card,
+.garden-card,
+.study-card {
+  background: #fffdf9;
+  padding: 22px;
+  margin-bottom: 18px;
+  border-radius: 20px;
+  box-shadow: 0 3px 12px #8d715012;
+}
+
+.progress-card h2 {
+  font-size: 32px;
+}
+
+.garden-card {
+  background: #e9eee2;
+  text-align: center;
+}
+
+.garden-icon {
+  font-size: 42px;
+  padding: 12px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.menu-grid button {
+  min-height: 95px;
+  background: #fffdf9;
+  border: 1px solid #eadfce;
+  border-radius: 17px;
+  font-size: 26px;
+}
+
+.menu-grid span,
+.bottom-nav span {
+  display: block;
+  font-size: 13px;
+  margin-top: 7px;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  color: #70523e;
+}
+
+.garden-card button,
+.study-card button,
+.extra button {
+  background: #96765e;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 17px;
+  margin: 5px;
+}
+
+.extra {
+  display: none;
+  padding: 25px;
+  background: #fffdf9;
+  border-radius: 20px;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: #fffdf9;
+  padding: 12px 4px;
+  box-shadow: 0 -3px 12px #8d715015;
+}
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  font-size: 21px;
+}
+
